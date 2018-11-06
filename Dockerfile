@@ -23,7 +23,7 @@ RUN addgroup -g 233 docker \
  && git config --global user.name "Leroy Jenkins"
 
 ##Default Timezone - Can be overridden
-ENV TZ=US/Central
+ENV TZ=Europe/Stockholm
 
 COPY run-jenkins.sh /usr/local/bin/run-jenkins.sh
 COPY s3-sync.sh /usr/local/bin/s3-sync.sh
