@@ -28,6 +28,8 @@ ENV TZ=Europe/Stockholm
 COPY run-jenkins.sh /usr/local/bin/run-jenkins.sh
 COPY s3-sync.sh /usr/local/bin/s3-sync.sh
 
+USER jenkins
+
 ENTRYPOINT ["/sbin/tini", "--"]
 
 CMD ["/usr/local/bin/run-jenkins.sh"]
