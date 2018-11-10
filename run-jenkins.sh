@@ -30,4 +30,4 @@ if [ -n "$S3_BUCKET" ]; then
 fi
 
 chown jenkins /var/jenkins_home
-su - jenkins -c "exec /usr/local/bin/jenkins.sh"
+exec /usr/local/bin/jenkins.sh
