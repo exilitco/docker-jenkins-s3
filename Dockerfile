@@ -9,7 +9,6 @@ RUN addgroup -g 233 docker \
  && apk add --no-cache \
       docker \
       py2-pip \
-      mono \
       python \
       shadow \
       tzdata \
