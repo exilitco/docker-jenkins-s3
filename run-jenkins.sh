@@ -29,5 +29,5 @@ if [ -n "$S3_BUCKET" ]; then
   /usr/sbin/crond
 fi
 
-chown jenkins /var/jenkins_home
+chown -R jenkins /var/jenkins_home
 exec su -c '/usr/local/bin/jenkins.sh' jenkins
