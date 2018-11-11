@@ -5,7 +5,7 @@ USER root
 RUN echo 'http://dl-cdn.alpinelinux.org/alpine/v3.6/main' >> /etc/apk/repositories \
  && echo 'http://dl-cdn.alpinelinux.org/alpine/v3.6/community' >> /etc/apk/repositories
 
-RUN addgroup -g 233 docker \
+RUN addgroup -g 497 docker \
  && apk add --no-cache \
       docker \
       py2-pip \
