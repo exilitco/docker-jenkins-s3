@@ -12,6 +12,7 @@ RUN addgroup -g 497 docker \
       python \
       shadow \
       tzdata \
+      zip \
  && pip install --no-cache-dir \
       awscli \
       docker-compose \
