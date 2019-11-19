@@ -9,6 +9,7 @@ RUN addgroup -g 497 docker \
  && apk update \
  && apk upgrade musl \
  && apk add --no-cache \
+      python2-dev \
       docker \
       build-base \
       py2-pip \
