@@ -7,7 +7,7 @@ RUN echo 'http://dl-cdn.alpinelinux.org/alpine/v3.6/main' >> /etc/apk/repositori
 
 RUN addgroup -g 497 docker \
  && apk update \
- && apk upgrade musl \
+ && apk upgrade \
  && apk add --no-cache \
       libffi-dev \
       python2-dev \
