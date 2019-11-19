@@ -7,7 +7,7 @@ RUN echo 'http://dl-cdn.alpinelinux.org/alpine/v3.6/main' >> /etc/apk/repositori
 
 RUN addgroup -g 497 docker \
  && apk update \
- && apt upgrade musl \
+ && apk upgrade musl \
  && apk add --no-cache \
       docker \
       build-base \
