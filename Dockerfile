@@ -8,6 +8,7 @@ RUN echo 'http://dl-cdn.alpinelinux.org/alpine/v3.6/main' >> /etc/apk/repositori
 RUN addgroup -g 497 docker \
  && apk add --no-cache \
       docker \
+      build-base \
       py2-pip \
       python \
       shadow \
