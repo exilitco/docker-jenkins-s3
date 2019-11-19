@@ -9,6 +9,8 @@ RUN addgroup -g 497 docker \
  && apk update \
  && apk upgrade \
  && apk add --no-cache \
+      libressl-dev \
+      musl-dev \
       libffi-dev \
       python2-dev \
       docker \
