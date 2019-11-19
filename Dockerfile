@@ -6,6 +6,7 @@ RUN echo 'http://dl-cdn.alpinelinux.org/alpine/v3.6/main' >> /etc/apk/repositori
  && echo 'http://dl-cdn.alpinelinux.org/alpine/v3.6/community' >> /etc/apk/repositories
 
 RUN addgroup -g 497 docker \
+ && apk update \
  && apk add --no-cache \
       docker \
       build-base \
